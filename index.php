@@ -2,5 +2,9 @@
 while (true) {
     $input = readline("Command: ");
 
-    echo "$input\n";
+    if ($input == "n") {
+        break;
+    } else {
+        echo "$input\n";
+    }
 }
