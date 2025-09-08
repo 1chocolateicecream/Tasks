@@ -4,6 +4,13 @@
 
 $tasks = ["task 1", "task 2", "task 3"];
 
+function showAllTasks($inputTasks)
+{
+    foreach ($inputTasks as $task) {
+        echo $task . "\n";
+    }
+}
+
 while (true) {
     $input = readline("some user input(0 or 1): ");
     if ($input == "n") {
@@ -12,15 +19,9 @@ while (true) {
 
     switch ($input) {
         case 0:
-            echo "i equals 0";
-            break;
+            exit;
         case 1:
-            echo "i equals 1";
+            showAllTasks($tasks);
             break;
-        case 2:
-            echo "i equals 2";
-            break;
-        default:
-            echo "i is not equal to 0, 1 or 2";
     }
 }
