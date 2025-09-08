@@ -1,4 +1,12 @@
 <?php
+$tasks = [
+    "task 1",
+    "task 2",
+    "task 3"
+];
+
+
+
 while (true) {
     $input = readline("Command: ");
 
@@ -9,15 +17,11 @@ while (true) {
     //     echo "$input\n";
     // }
 
-    $tasks = [
-        "task 1",
-        "task 2",
-        "task 3"
-    ];
 
     switch ($input) {
         case '1':
             echo "tasks list\n";
+            // printAllTasks($tasks);
             break;
         case 'a':
             echo "add task\n";
